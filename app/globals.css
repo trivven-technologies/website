@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  /* Base Colors - Pure White & Black */
+  --background: #ffffff;
+  --foreground: #000000;
+
+  /* Brand Colors - Monochrome High Contrast */
+  --primary: #000000;
+  --primary-foreground: #ffffff;
+
+  /* Secondary - Very subtle grey for interaction states */
+  --secondary: #f4f4f5; 
+  --secondary-foreground: #000000;
+
+  /* Muted - Neutral greys */
+  --muted: #aaaaaa;
+  --muted-foreground: #71717a;
+  
+  /* Border */
+  --border: #e4e4e7;
+  
+  /* Accent - Optional, keeping it neutral or can be changed to a color later */
+  --accent: #000000; 
+  --accent-foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-quicksand);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
